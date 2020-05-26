@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Goel Jewellers`,
+    description: `Gold, diamond and silver jewelry in Kanpur.`,
+    author: `@utkarsh867`,
+    siteUrl: "https://www.goeljewellers.com/",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -18,8 +19,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Goel Jewellers`,
+        short_name: `Goel Jewellers`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
@@ -27,6 +28,18 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Playfair Display`,
+          `PT Serif`, // you can also specify font weights and styles
+        ],
+        display: "swap",
+      },
+    },
+    "gatsby-plugin-theme-ui",
+    "gatsby-plugin-cname",
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

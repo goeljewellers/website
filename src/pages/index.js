@@ -1,21 +1,24 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
-
+import { Banner } from "../components/banner"
+import { Box } from "theme-ui"
+import * as bg from "../images/bg.jpg"
 const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+  <Box
+    sx={{
+      backgroundImage: `url(${bg})`,
+      backgroundSize: "cover",
+      backgroundRepeat: "no-repeat",
+      height: "100vh",
+    }}
+  >
+    <Layout>
+      <SEO title="Home" />
+      <Banner />
+    </Layout>
+  </Box>
 )
 
 export default IndexPage

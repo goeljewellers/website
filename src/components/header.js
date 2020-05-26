@@ -1,42 +1,22 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import { Box, Heading, Container, Flex } from "theme-ui"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
+  <Box backgroundColor="header">
+    <Container paddingTop={5} paddingLeft={2} paddingRight={2}>
+      <Flex sx={{ alignItems: "center" }}>
+        <Heading variant="heading" sx={{ flex: "1 1 auto" }}>
+          Goel Jewellers
+        </Heading>
+        <Heading variant="navs" as="h3">
+          About
+        </Heading>
+        <Heading variant="navs" as="h3" marginLeft={4}>
+          Contact Us
+        </Heading>
+      </Flex>
+    </Container>
+  </Box>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header
