@@ -4,11 +4,12 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Banner } from "../components/banner"
 import { Box } from "theme-ui"
-import * as bg from "../images/bg.jpg"
+import { Contact } from "../components/contact"
+import { Body1 } from "../components/body1"
+
 const IndexPage = () => (
   <Box
     sx={{
-      backgroundImage: `url(${bg})`,
       backgroundSize: "cover",
       backgroundRepeat: "no-repeat",
       height: "100vh",
@@ -17,6 +18,8 @@ const IndexPage = () => (
     <Layout>
       <SEO title="Home" />
       <Banner />
+      <Body1 />
+      <Contact />
     </Layout>
   </Box>
 )

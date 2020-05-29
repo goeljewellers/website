@@ -29,12 +29,12 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-react-svg",
+    },
+    {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          `Playfair Display`,
-          `PT Serif`, // you can also specify font weights and styles
-        ],
+        fonts: [`Playfair Display`, `PT Serif`, `Lato\:100,300`],
         display: "swap",
       },
     },
