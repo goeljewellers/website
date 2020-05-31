@@ -33,7 +33,7 @@ export const Banner = () => (
         marginTop={5}
         marginBottom={3}
         onClick={() => {
-          window.location.href = "https://forms.gle/Z2fHKg52Ez3xakC37"
+          window.location.href = "https://signup.goeljewellers.com"
         }}
       >
         <Text variant="body">Subscribe</Text>
