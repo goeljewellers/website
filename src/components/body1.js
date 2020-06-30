@@ -1,6 +1,6 @@
 import React from "react"
 import { Box, Flex, Image, Heading } from "theme-ui"
-import * as img1 from "../images/jewels2.jpg"
+import * as img1 from "../images/under_construction.png"
 
 export const Body1 = () => (
   <Flex sx={{ position: "relative" }}>
@@ -11,12 +11,11 @@ export const Body1 = () => (
         top: "0",
         width: "100%",
         height: "100%",
-        backgroundColor: "rgba(0,0,0,0.5)",
+
         textAlign: "center",
       }}
     >
       <Heading
-        color="white"
         paddingTop={[5, 6, 7]}
         sx={{
           width: "100%",
@@ -26,10 +25,9 @@ export const Body1 = () => (
         }}
         variant="heading"
       >
-        Beautiful and Timeless
+        Coming Soon
       </Heading>
       <Heading
-        color="white"
         paddingTop={[2, 3, 4]}
         paddingLeft={[3, 2, 1]}
         paddingRight={[3, 2, 1]}
@@ -41,7 +39,7 @@ export const Body1 = () => (
         }}
         variant="heading"
       >
-        Making the jewellery for you, that defines you.
+        An online catalogue of our range of jewelry designs.
       </Heading>
     </Box>
   </Flex>
