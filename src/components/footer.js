@@ -17,7 +17,6 @@ export const Footer = () => {
       <Box display={["none", "none", "block", "block", "block"]}>
         <Business />
       </Box>
-
       <About />
       <Contact />
     </Grid>
