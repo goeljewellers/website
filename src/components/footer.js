@@ -1,39 +1,25 @@
 import React from "react"
-import { Box, Container, Flex, Text, NavLink } from "theme-ui"
-import FacebookLogo from "../images/f.svg"
+import { Box, Grid } from "@chakra-ui/core"
+import Contact from "./footer-components/contact"
+import About from "./footer-components/about"
+import Business from "./footer-components/business"
 
 export const Footer = () => {
   return (
-    <footer>
-      <Box backgroundColor="footer">
-        <Container>
-          <Flex
-            sx={{ alignItems: "center", alignContent: "center" }}
-            padding={2}
-          >
-            <Text
-              variant="footer"
-              as="p"
-              paddingRight={[2, 3, 3]}
-              sx={{ flex: "1 1 auto" }}
-            >
-              Privacy Policy
-            </Text>
-            <Text variant="footer" as="p">
-              Goel Jewellers
-            </Text>
-            <NavLink
-              href="https://www.facebook.com/goeljewel/"
-              marginLeft={[2, 3, 3]}
-              sx={{ textAlign: "center", alignContent: "center" }}
-            >
-              <Flex>
-                <FacebookLogo style={{ height: "15px" }} />
-              </Flex>
-            </NavLink>
-          </Flex>
-        </Container>
+    <Grid
+      as="footer"
+      gridTemplateColumns="auto 1fr auto"
+      py="24"
+      px={[4, 8, 16, 32, 32]}
+      backgroundColor="footer"
+      color="footerText"
+    >
+      <Box display={["none", "none", "block", "block", "block"]}>
+        <Business />
       </Box>
-    </footer>
+
+      <About />
+      <Contact />
+    </Grid>
   )
 }
