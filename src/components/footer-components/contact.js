@@ -11,7 +11,7 @@ const Contact = () => (
       <Text>Kanpur, Uttar Pradesh</Text>
       <Text>INDIA - 208001</Text>
       <Link href="mailto:hi@goeljewellers.com">
-        <Text>HI@GOELEWELLERS.COM</Text>
+        <Text>hi@goeljewellers.com</Text>
       </Link>
     </Box>
     <Flex>

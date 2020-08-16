@@ -7,22 +7,21 @@ export const Banner = () => (
     justifyContent="center"
     alignItems="center"
     flexDirection="column"
-    py="24"
+    py={[10, 14, 18, 24]}
+    mx={10}
   >
     <Heading
-      variant="heading"
-      as="h1"
       paddingTop={[5, 5, 6]}
-      sx={{
-        flex: "1 1 auto",
-        textAlign: "center",
-        fontSize: [4, 4, 6],
-        fontWeight: "light",
-      }}
+      fontSize={["xl", "2xl", "4xl", "5xl"]}
+      textAlign="center"
     >
       Your most trusted jeweller
     </Heading>
-    <Heading variant="heading_italic" as="h4" paddingTop={3}>
+    <Heading
+      paddingTop={[5, 5, 6]}
+      fontSize={["xl", "2xl", "4xl", "5xl"]}
+      textAlign="center"
+    >
       In Kanpur, Since 1950
     </Heading>
     <Button
@@ -34,7 +33,7 @@ export const Banner = () => (
       <Text variant="body">Subscribe</Text>
     </Button>
     <Box paddingBottom={4}>
-      <Text variant="heading_italic">
+      <Text textAlign="center">
         So that we can keep in touch with you for exciting offers.
       </Text>
     </Box>
