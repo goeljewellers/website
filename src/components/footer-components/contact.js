@@ -15,8 +15,14 @@ const Contact = () => (
       </Link>
     </Box>
     <Flex>
-      <SocialIcon icon={faFacebookF} />
-      <SocialIcon icon={faInstagram} />
+      <SocialIcon
+        icon={faFacebookF}
+        link="https://www.facebook.com/goeljewel"
+      />
+      <SocialIcon
+        icon={faInstagram}
+        link="https://instagram.com/goel.jewellers"
+      />
     </Flex>
   </Box>
 )
