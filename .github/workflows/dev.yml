@@ -1,0 +1,24 @@
+name: Deploy Goel Jewellers website
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  app:
+    name: Github Pages
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install and Build
+        run: |
+          yarn install
+          yarn build
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@3.5.9
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: build
