@@ -3,17 +3,18 @@ import { Box, Flex, Heading, Button, Text } from "@chakra-ui/core"
 
 export const Banner = () => (
   <Flex
-    backgroundColor="header"
+    backgroundColor="footer"
     justifyContent="center"
     alignItems="center"
     flexDirection="column"
     py={[10, 14, 18, 24]}
-    mx={10}
+    px={10}
   >
     <Heading
       paddingTop={[5, 5, 6]}
       fontSize={["xl", "2xl", "4xl", "5xl"]}
       textAlign="center"
+      color="white"
     >
       Your most trusted jeweller
     </Heading>
@@ -21,6 +22,7 @@ export const Banner = () => (
       paddingTop={[5, 5, 6]}
       fontSize={["xl", "2xl", "4xl", "5xl"]}
       textAlign="center"
+      color="white"
     >
       In Kanpur, Since 1950
     </Heading>
@@ -33,7 +35,7 @@ export const Banner = () => (
       <Text variant="body">Subscribe</Text>
     </Button>
     <Box paddingBottom={4}>
-      <Text textAlign="center">
+      <Text textAlign="center" color="white">
         So that we can keep in touch with you for exciting offers.
       </Text>
     </Box>
