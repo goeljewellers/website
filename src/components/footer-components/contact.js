@@ -4,7 +4,7 @@ import SocialIcon from "../socialicon"
 import { faFacebookF, faInstagram } from "@fortawesome/free-brands-svg-icons"
 
 const Contact = () => (
-  <Box mx="10">
+  <Box mx="10" id="contact">
     <Box>
       <Text fontWeight="bold">Contact Us</Text>
       <Text>26/104, Birhana Road</Text>

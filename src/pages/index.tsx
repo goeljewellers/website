@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 import { Banner } from "../components/banner"
 import { Box } from "@chakra-ui/core"
 import About from "../components/about"
+import Intro from "../components/intro"
 
 const IndexPage = ({ data }) => {
   console.log(data)
@@ -13,6 +14,7 @@ const IndexPage = ({ data }) => {
     <Layout>
       <SEO title="Home" />
       <Banner />
+      <Intro />
       <About storeImage={data.store.childImageSharp.fluid} />
     </Layout>
   )

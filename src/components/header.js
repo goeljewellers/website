@@ -1,16 +1,9 @@
 import React from "react"
-import { Heading, Text, Flex, Link } from "@chakra-ui/core"
+import { Text, Flex, Link } from "@chakra-ui/core"
 
 const Header = () => (
-  <Flex py="10" px={[8, 10]} alignItems="baseline">
-    <Heading
-      variant="heading"
-      flex="1 1 auto"
-      fontSize={["lg", "xl", "2xl", "3xl"]}
-    >
-      Goel Jewellers
-    </Heading>
-    <Text variant="navs" as="h3" display={["none", "inline"]}>
+  <Flex py="10" px={[8, 10]} alignItems="baseline" position="absolute" width="100%">
+    <Text variant="navs" as="h3" display={["none", "inline"]} ml="auto">
       About
     </Text>
     <Link href="#contact" display={["none", "inline"]}>

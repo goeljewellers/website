@@ -1,43 +1,17 @@
 import React from "react"
-import { Box, Flex, Heading, Button, Text } from "@chakra-ui/core"
+import { Box, Flex } from "@chakra-ui/core"
+import Logo from "../images/logo.svg"
 
 export const Banner = () => (
   <Flex
-    backgroundColor="footer"
     justifyContent="center"
     alignItems="center"
     flexDirection="column"
-    py={[10, 14, 18, 24]}
+    h="100vh"
     px={10}
   >
-    <Heading
-      paddingTop={[5, 5, 6]}
-      fontSize={["xl", "2xl", "4xl", "5xl"]}
-      textAlign="center"
-      color="white"
-    >
-      Your most trusted jeweller
-    </Heading>
-    <Heading
-      paddingTop={[5, 5, 6]}
-      fontSize={["xl", "2xl", "4xl", "5xl"]}
-      textAlign="center"
-      color="white"
-    >
-      In Kanpur, Since 1950
-    </Heading>
-    <Button
-      my="10"
-      onClick={() => {
-        window.location.href = "https://signup.goeljewellers.com"
-      }}
-    >
-      <Text variant="body">Subscribe</Text>
-    </Button>
-    <Box paddingBottom={4}>
-      <Text textAlign="center" color="white">
-        So that we can keep in touch with you for exciting offers.
-      </Text>
+    <Box px={[0, 0, 8, 10, 64]}>
+      <Logo style={{ width: "100%", height: "auto" }} />
     </Box>
   </Flex>
 )
